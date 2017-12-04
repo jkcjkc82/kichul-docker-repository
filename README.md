@@ -3,7 +3,10 @@
 This project is to store the instruction of docker images that I build. All of the history(instruction) will be saved.
 
 ```bash
-# to build in 
+# docker env - Windows minikube
+@FOR /f "tokens=*" %i IN ('minikube docker-env') DO @%i
+
+# to build in
 docker build -t $(cd .. ; basename "$PWD"):$(basename "$PWD") .
 
 # to remove none images
