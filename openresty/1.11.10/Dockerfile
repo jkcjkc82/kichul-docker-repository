@@ -22,7 +22,8 @@ RUN \
     cd nginx-1.11.10 ; \
     ./configure --with-ld-opt="-Wl,-rpath,/usr/local/lib" \
         --add-module=/ngx_devel_kit-0.3.0 \
-        --add-module=/lua-nginx-module-0.10.11 ; \
+        --add-module=/lua-nginx-module-0.10.11 \
+        --with-http_ssl_module ; \
     make ; make install ; \
     cd .. ; \
     rm -rf nginx-1.11.10 nginx-1.11.10.tar.gz v0.3.0.tar.gz ngx_devel_kit-0.3.0 v0.10.11.tar.gz lua-nginx-module-0.10.11
