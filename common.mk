@@ -24,6 +24,7 @@ tutorial:
 	@echo "  "docker-build
 	@echo "  "docker-run
 	@echo "  "docker-push
+	@echo "  "docker-rm
 
 # TEST_VAL=1
 
